@@ -1,0 +1,65 @@
+<html lang="en" >
+   <head>
+      <title>Register</title>
+   <meta charset="UTF-8">
+   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
+   <!-- <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css'> -->
+   <link href="/css/style_register.css" rel="stylesheet" type="text/css">
+
+   </head>
+   <body>
+   <div class="container">
+      <div class="screen">
+         <div class="screen_content">
+            <form class="login" method="POST" enctype="multipart/form-data">
+               <h1>Register</h1>
+               <%
+               if(typeof message !== 'undefined'){
+                  %>
+                     <p style="color: green;"><%= message %></p>
+                  <%
+               }
+               %>
+               <div class="login_field">
+                  <i class="login_icon fas fa-user"></i>
+                  <input type="text" class="login_input" placeholder="Enter Name" name="name" required>
+               </div>
+               <div class="login_field">
+                  <i class="login_icon fas fa-envelope"></i>
+                  <input type="email" class="login_input" placeholder="Enter Email" name="email" required>
+               </div>
+               <div class="login_field">
+                  <i class="login_icon fas fa-file"></i>
+                  <input type="file" class="login_input" name="image" required>
+               </div>
+               <div class="login_field">
+                  <i class="login_icon fas fa-lock"></i>
+                  <input type="password" class="login_input" placeholder="Enter Password" name="password" required>
+               </div>
+               <button class="button login_submit">
+                  <input class="button_text" type="submit" value="Submit">
+                  <i class="button_icon fas fa-chevron-right"></i>
+               </button>					
+            </form>
+            <button class="reg login_submit">
+               <a href="/">Login</a>
+               <i class="button_icon fas fa-chevron-right"></i>
+            </button>	
+            
+         
+
+         </div>
+         <div class="screen_background">
+            <span class="screen_background_shape screen_background_shape4"></span>
+            <span class="screen_background_shape screen_background_shape3"></span>		
+            <span class="screen_background_shape screen_background_shape2"></span>
+            <span class="screen_background_shape screen_background_shape1"></span>
+         </div>
+      </div>
+   </div>
+   <!-- partial -->
+
+   
+   
+   </body>
+</html>
