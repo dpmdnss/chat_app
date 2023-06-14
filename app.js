@@ -58,6 +58,6 @@ usp.on('connection', async function(socket){
 
 });
 
-http.listen(chat-app-cqwa.onrender.com, function(){
+http.listen(3000, function(){
    console.log('Server is running');
 });
