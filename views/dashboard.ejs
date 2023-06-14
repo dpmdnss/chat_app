@@ -10,7 +10,7 @@
                for(let i=0; i < users.length; i++){
                   %>
                      <li class="list-group-item list-group-item-dark cursor-pointer user-list" data-id="<%= users[i]['_id']%>">
-                        <img class="img" src="<%= 'http://127.0.0.1:3000/'+users[i]['image']%>" alt="" width="50px" height="50px">
+                        <img class="img" src="<%= 'http://0.0.0.0:3000/'+users[i]['image']%>" alt="" width="50px" height="50px">
                         <%= users[i]['name'] %>
                         <%
                            if(users[i]['is_online'] == 1){
