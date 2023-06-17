@@ -57,7 +57,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff; }
+  background-color: whitesmoke; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -882,7 +882,7 @@ pre {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
-    max-width: 25%; }
+    max-width: 40%; }
   .col-md-4 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 33.33333%;
@@ -4614,8 +4614,8 @@ input[type="button"].btn-block {
     border-color: #818182; }
 
 .list-group-item-dark {
-  color: #1b1e21;
-  background-color: #c6c8ca; }
+  color: rgba(42, 47, 79, 1);
+  background: rgba(42, 47, 79, .5); }
   .list-group-item-dark.list-group-item-action:hover, .list-group-item-dark.list-group-item-action:focus {
     color: #1b1e21;
     background-color: #b9bbbe; }
@@ -8195,7 +8195,7 @@ h1, h2, h3, h4, h5,
 #sidebar {
   min-width: 250px;
   max-width: 250px;
-  background: #212121;
+  background: #2A2F4F;
   color: #fff;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -8212,10 +8212,10 @@ h1, h2, h3, h4, h5,
     font-weight: 700;
     font-size: 20px; }
     #sidebar h1 .logo {
-      color: #fff;
+      color: whitesmoke;
       display: block;
       padding: 10px 30px;
-      background: #2f89fc; }
+      background: #917FB3; }
   #sidebar ul.components {
     padding: 0; }
   #sidebar ul li {
@@ -8227,7 +8227,7 @@ h1, h2, h3, h4, h5,
     #sidebar ul li a {
       padding: 15px 30px;
       display: block;
-      color: rgba(255, 255, 255, 0.6);
+      color: #FDE2F3;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
       #sidebar ul li a:hover {
         color: #fff;
@@ -8235,7 +8235,7 @@ h1, h2, h3, h4, h5,
         border-bottom: 1px solid #2f89fc; }
     #sidebar ul li.active > a {
       background: transparent;
-      color: #fff; }
+      color: #FDE2F3; }
       #sidebar ul li.active > a:hover {
         background: #2f89fc;
         border-bottom: 1px solid #2f89fc; }
@@ -8336,10 +8336,12 @@ a[data-toggle="collapse"] {
   cursor: pointer;
 }
 #chat-container{
-  background-color: lightblue;
+  background: rgba(42, 47, 79, .5);
   width: 100%;
   height: 400px;
-  overflow: scroll;
+  overflow-y: scroll;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 .border{
   width: 75%;
@@ -8356,18 +8358,44 @@ a[data-toggle="collapse"] {
 .current-user-chat{
   text-align: right;
   margin: 10px;
-  color: black;
+  margin-left: 60%;
+  background-color: #FDE2F3;
+  border-radius: 5px;
+}
+.current-user-chat h5{
+  color: #2A2F4F;
+  padding: 10px;
 }
 .distance-user-chat{
   text-align: left;
   margin: 10px;
-  color: black;
+  width: 40%;
+  background-color: #2A2F4F;
+  border-radius: 5px;
+}
+.distance-user-chat h5{
+  color: #FDE2F3;
+  padding: 10px;
 }
 .fa-trash{
-  color: red;
+  color: rgba(255, 0, 0, .7);
 }
 .contacts{
   overflow-y: scroll;
   padding: 0px;
-  height: 400px;
+  height: 100%;
+}
+#chat-form{
+  padding: 20px;
+  background: rgba(42, 47, 79, .5);
+}
+#message{
+  padding: 10px;
+  border-radius: 5px;
+}
+#sendMsg{
+  margin-left: 5px;
+}
+.greet{
+  margin: 20px 0 20px 0;
 }

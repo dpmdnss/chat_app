@@ -1,6 +1,6 @@
 <%- include('layouts/header.ejs') %>
 
-<h2 class="mb-4">Hello! Welcome, <%= user.name %>!</h2>
+<h2 class="mb-4 greet">Hello! Welcome, <%= user.name %>!</h2>
 
 <div class="row">
    <div class="col-md-3 contacts">
@@ -40,7 +40,7 @@
 
          <form action="" id="chat-form">
             <input type="text" name="message" placeholder="Enter Message" id="message" class="border" required>
-            <input type="submit" value="Send Message" class="btn btn-primary">
+            <input type="submit" value="Send Message" class="btn btn-primary" id="sendMsg">
          </form>
 
       </div>
